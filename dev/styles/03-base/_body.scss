@@ -1,0 +1,15 @@
+$color--main: #06f;
+$color--border: lighten($color--main, 20%);
+
+body {
+   padding: 100px;
+   background-color: $mint-grn;
+   font-family: $bodyFont;
+   display: flex;
+   flex-flow: row-wrap;
+   p {
+      padding: 25px;
+      text-align: center;
+      line-height: 1.9;
+   }
+}
