@@ -1,7 +1,7 @@
 /*jslint browser, es6 */
 /*global window */
 
-// window.onload = function () {
+window.onload = function () {
 //     const CSSPreProcessor = `Sass`;
 //     const JSVersion = `ES6`;
 //
@@ -14,4 +14,9 @@
 //
 //     paragraph.appendChild(text);
 //     body.appendChild(paragraph);
-// };
+        const Jenny = document.querySelector('.name');
+
+        console.log(Jenny)
+
+        Jenny.addClass('move')
+};

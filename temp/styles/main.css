@@ -1,5 +1,3 @@
-//name
-
 .underline > a {
   font-size: 2.5em;
   line-height: 64px;
@@ -22,15 +20,12 @@
   left: 0;
   background-color: #000;
   visibility: hidden;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .underline > a:hover:before {
   visibility: visible;
-  -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -94,4 +89,10 @@ img {
 
 .move {
   margin: .75em .75em 0 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
