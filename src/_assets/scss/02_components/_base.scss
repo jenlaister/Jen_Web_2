@@ -1,0 +1,21 @@
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  height: 100%;
+}
+
+body {
+  // background-color: $blush;
+  background-color: $navy-blue;
+  color: $gold;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  // overflow-x: hidden;
+  // overflow-y: scroll;
+}
+
+header, .container, .container-fluid {
+  flex: 1 0 auto;
+}

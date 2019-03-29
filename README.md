@@ -1,23 +1,105 @@
-# A Gulp Task for HTML, Sass/CSS, and JavaScript
+# AST-GLOBAL-XOS-microsite
 
-(v3.0.1)
+**STAGING**
+- The staging instance **MUST** point to the `public` directory
+- Updates to the staging files in the above directory should be made by running `gulp dist`
+  - the `build` directory is ignored in `.gitignore` because all files are tracked in `src` and `public`
+
+# OVERVIEW
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Commands](#commands)
+
+
+## Prerequisites
+
+You must have the below packages installed on your computer. This is also a good time to check if the packages are up to date.
+
+### [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+
+Bring up a terminal and type `ruby -v` to check if you have ruby installed. If you have Ruby installed it's best to run the command `gem outdated` to see which of your installed gems need updating. Update your gems by running `gem update`
+
+
+### [Node.js](https://nodejs.org)
+
+Bring up a terminal and type `node -v`. Currently, the latest node version is at 9.8.0
+
+
+### [npm](https://docs.npmjs.com/getting-started/installing-node)
+
+Node comes with npm but it is updated more frequently. Run `npm -v` Currently, the stable npm version is above 5.7.0
+
+To update to latest version run `npm install npm@latest -g`
+
+
+### [gulp 4](https://www.fastless.com/gulp-4/)
+
+If you have not upgraded to Gulp 4 before you will first have to remove gulp `npm uninstall -g gulp`
+
+Then install the latest Gulp 4 CLI tools globally `npm i -g gulp-cli`. Run `gulp -v` and you should now see `CLI version 2.0.1` or higher.
+
 
 ---
 
-## Installation
-You need to have Java installed before continuing, as the browser refresh module requires it. Additionally, all the required Node modules need to be installed before you can use this template. From the root folder of this project, type `npm install`. This will create a folder called `node_modules` and download the plugins listed under the `devDependencies` section in the `package.json` file. If you encounter an `ERR!` message about `EACCES`, then you’ll need to run the command as the super user: `sudo npm install`. Because the Gulp tasks amount to about 157MB, expect to wait.
+# SETUP
 
-## Tasks
-Typing `gulp --tasks`, or simply `gulp`, will provide you with a list of tasks included in `gulpfile.js`. Tasks such as `build` and `serve` invoke other tasks and are nested in the output of `gulp --tasks`.
+1. Check your above prerequisites are up-to-date
+2. Run:
 
-Each task can be run on its own. For example, if all you want to do is validate your HTML, you can type `gulp validateHTML`, and if the task runs to completion without any messages, it means your HTML is valid and W3-compliant.
+```sh
+$ npm install
+```
 
-Above each task in the `gulpfile.js` file is an elaborate comment discussing what each task does.
 
-## Running the Project
-All your work must be added to the sub-folders under the `dev` folder: your markup in `html`, your Sass/CSS in `styles`, your JavaScript in `scripts`, and your images in `img`.
+## Structure
 
-For development, run `gulp serve`, which runs multiple development-related tasks, then launches your default browser and listens for changes. Gulp keeps you informed via The Terminal. You can now work on your project as you normally would. Each time you save a file, your browser will refresh so you don’t have to.
+A list of sources and related directories can be found and adjusted in `config-workflow.json`. General structure and flow below.
 
-For production-ready projects, run `build`, which creates a folder called `prod`. This is the folder you’d upload to your server if you were going live with your project.
-# Jen_Web_2
+### Handlebars
+- `/src/_hbs-templates`
+  - Handlebar Partials, Helpers, and Data examples have been included. The Debug option is set to true (/gulp-tasks/handlebar-tasks.js line 36) which shows you which handlebar parts are available to you.
+
+### General Assets
+- `/src/_assets/js`
+  - **Babel** is being used when Javascript components are compiled
+  - make changes to js here and updates will be compiled and optimized into build through gulp tasks
+  - files in `/src/_assets/js/vendor` have separate rules in the gulp tasks. For example, babel is not used when vendor files are compiled
+  - **destination** `/build/_assets/js`
+- `/src/_assets/scss`
+  - autoprefixer is being used via gulp
+  - **destination** `/build/_assets/css`
+- `/src/_assets/img`
+  - images will be optimized through the distribution gulp workflow but any pre-optimization is welcome
+  - **destination** `/build/_assets/img`
+
+### General Build
+- `/src`
+  - This build is using handlebars - work in the `/src` DO NOT change the HTML in `/build` because your work will be overwritten by the gulp task
+  - working files are served from `/build` via Browser Sync when running gulp
+
+### Distribution
+- `/public`
+  - **DO NOT** make edits to these files because the gulp workflow will override them
+  - These files are served on staging
+
+
+---
+
+# COMMANDS
+
+## For Builds
+
+**For Development in '/build'**
+```sh
+$ gulp
+```
+
+This outputs an IP address you can use to locally test and another that can be used on devices
+connected to your network. Press Ctrl-C to quit.
+
+**Run optimization and move any updated riles to '/public'**
+```sh
+$ gulp dist
+```
+
+**NOTE:** USE `gulp --tasks` to list out all tasks

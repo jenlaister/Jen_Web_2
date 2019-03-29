@@ -1,0 +1,44 @@
+// Colors
+$mint-grn: #87c6bd;
+$gold: #d28c0e;
+$navy-blue: #07244e;
+$blush: #fbf1ed;
+
+
+
+// transitions
+$ts: 0.3s; // transition speed
+$te: ease-in-out; // transition ease
+$td: 30px; // transition distance
+
+
+// FONTS
+
+$font-family: Arial;
+$font-header: 'Prism-Regular', Helvetica, Arial, sans-serif;
+
+//Media Breakpts
+
+// Small ≥576px
+@mixin breakpoint-sm() {
+  @media only screen and (max-width: map-get($grid-breakpoints, "sm")) { @content; }
+}
+
+// Medium ≥768px
+@mixin breakpoint-md() {
+  @media only screen and (max-width: map-get($grid-breakpoints, "md")) { @content; }
+}
+
+@mixin breakpoint-md-up() {
+  @media only screen and (min-width: map-get($grid-breakpoints, "md")) { @content; }
+}
+
+// Large ≥992px
+@mixin breakpoint-lg() {
+  @media only screen and (max-width: map-get($grid-breakpoints, "lg")) { @content; }
+}
+
+// Extra large ≥1200px
+@mixin breakpoint-xl() {
+  @media only screen and (max-width: map-get($grid-breakpoints, "xl")) { @content; }
+}
