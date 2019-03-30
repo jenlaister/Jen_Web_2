@@ -3,6 +3,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.2;
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -12,10 +13,29 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  // overflow-x: hidden;
-  // overflow-y: scroll;
 }
 
 header, .container, .container-fluid {
   flex: 1 0 auto;
+}
+
+#blush-line, #white-line, #gold-line {
+  margin: 2px 0;
+  z-index: 10px;
+}
+
+#blush-line {
+  border: 2px solid $blush;
+}
+
+#white-line {
+  border: 2px solid $white;
+}
+
+#gold-line {
+  border: 2px solid $gold;
+}
+
+#header-line {
+  margin: 7.75rem -7.75rem 0;
 }

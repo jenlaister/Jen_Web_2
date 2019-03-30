@@ -3,17 +3,23 @@
 .content-col {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .content-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .center {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  height: 100%;
+  &:hover {
+    font-weight: bold;
+  }
 }
 
 .col {
