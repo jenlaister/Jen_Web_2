@@ -1,6 +1,13 @@
 .initial-header {
   font-family: $font-header;
   font-size: 21.5rem;
+  color: $gold;
+  z-index: 100;
+  animation: glow .9s infinite alternate;
 }
-// .header {
-// }
+
+@keyframes glow {
+    to {
+      text-shadow: 0 0 10px $gold;
+    }
+}

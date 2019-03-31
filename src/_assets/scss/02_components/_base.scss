@@ -7,12 +7,26 @@ body {
 }
 
 body {
-  // background-color: $blush;
   background-color: $navy-blue;
   color: $gold;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  // padding: 2rem;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+body:before {
+  background: $blush;
+  content: "";
+  position: absolute;
+  left: -345px;
+  top: 0;
+  bottom: 0;
+  transform: skew(-30deg);
+  width: 1425px;
 }
 
 header, .container, .container-fluid {
