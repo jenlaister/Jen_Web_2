@@ -1,7 +1,13 @@
 
-const babelInUse = "Can use ES6 :)"
+const babelInUse = "babel + ES6"
 
 $(document).ready(function(){
-  console.log('Document Ready');
-  console.log(babelInUse);
+
+  setTimeout(function() {
+    $('#initial-load').addClass('push-up');
+    $('.initial-header').addClass('reduce');
+    $('#initial-homepage').removeClass('hide');
+    $('#about').removeClass('hide');
+  }, 1500);
+
 });

@@ -1,5 +1,16 @@
-//FLEXBOX
+section {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // height: 100%;
+  // z-index: -1;
+  // -webkit-transform: translateY(0);
+  // -ms-transform: translateY(0);
+  // transform: translateY(0);
+}
 
+//FLEXBOX
 .content-col {
   display: flex;
   flex-direction: column;

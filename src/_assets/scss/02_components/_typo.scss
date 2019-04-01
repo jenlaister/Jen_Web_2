@@ -1,9 +1,36 @@
+h1 {
+
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
+
+strong, .bold {
+  font-weight: bold;
+}
+
 .initial-header {
-  font-family: $font-header;
-  font-size: 21.5rem;
-  color: $gold;
-  z-index: 100;
+  color: #D28C0E;
+  font-family: $font-header, Helvetica, Arial, sans-serif;
+  font-size: 12rem;
+  font-weight: 100;
+  -webkit-animation: glow .9s infinite alternate;
   animation: glow .9s infinite alternate;
+  z-index: 100;
+}
+
+#j {
+  &.reduce {
+    transform: scale(0.5) translate(50%, 675%);
+  }
+}
+
+#l {
+  &.reduce {
+    transform: scale(0.5) translate(-50%, 695%);
+  }
 }
 
 @keyframes glow {
