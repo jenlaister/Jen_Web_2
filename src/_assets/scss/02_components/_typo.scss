@@ -3,8 +3,8 @@ h1 {
 }
 
 p {
-  font-size: 16px;
-  margin: 0;
+  font-size: 21px;
+  margin: .5rem auto;
 }
 
 strong, .bold {
@@ -37,4 +37,12 @@ strong, .bold {
     to {
       text-shadow: 0 0 10px $gold;
     }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
 }

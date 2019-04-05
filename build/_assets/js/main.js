@@ -6,7 +6,7 @@ $(document).ready(function () {
     $('#initial-load').addClass('push-up');
     $('.initial-header').addClass('reduce');
     $('#initial-homepage').removeClass('hide');
-    $('#about').removeClass('hide');
-  }, 1500);
+    $('#about').removeClass('hide'); // }, 1500);
+  }, 0);
 });
 //# sourceMappingURL=main.js.map

@@ -8,6 +8,7 @@ $(document).ready(function(){
     $('.initial-header').addClass('reduce');
     $('#initial-homepage').removeClass('hide');
     $('#about').removeClass('hide');
-  }, 1500);
+  // }, 1500);
+     }, 0);
 
 });
