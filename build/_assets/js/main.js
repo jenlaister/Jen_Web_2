@@ -5,8 +5,8 @@ $(document).ready(function () {
   setTimeout(function () {
     $('#initial-load').addClass('push-up');
     $('.initial-header').addClass('reduce');
-    $('#initial-homepage').removeClass('hide');
-    $('#about').removeClass('hide'); // }, 1500);
-  }, 0);
+    $('header, #initial-homepage').removeClass('hide');
+    $('#about').removeClass('hide');
+  }, 2000); // }, 0);
 });
 //# sourceMappingURL=main.js.map

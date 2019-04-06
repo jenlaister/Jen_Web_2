@@ -1,5 +1,5 @@
-h1 {
-
+h1, h2, h3,  h4, h5, h6 {
+  font-family: $font-header, Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -13,7 +13,7 @@ strong, .bold {
 
 .initial-header {
   color: #D28C0E;
-  font-family: $font-header, Helvetica, Arial, sans-serif;
+  font-family: $font-init-header, Helvetica, Arial, sans-serif;
   font-size: 12rem;
   font-weight: 100;
   -webkit-animation: glow .9s infinite alternate;
@@ -21,22 +21,30 @@ strong, .bold {
   z-index: 100;
 }
 
+.right-align {
+  text-align: right;
+}
+
+.left-align {
+  text-align: left;
+}
+
 #j {
   &.reduce {
-    transform: scale(0.5) translate(50%, 675%);
+    transform: scale(0.5) translate(50%, 585%);
   }
 }
 
 #l {
   &.reduce {
-    transform: scale(0.5) translate(-50%, 695%);
+    transform: scale(0.5) translate(-50%, 600%);
   }
 }
 
 @keyframes glow {
-    to {
-      text-shadow: 0 0 10px $gold;
-    }
+  to {
+    text-shadow: 0 0 10px $gold;
+  }
 }
 
 a {

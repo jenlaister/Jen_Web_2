@@ -1,14 +1,27 @@
 .agent-1 {
+  margin: -4.5rem 0 0 45rem;
   transform: scaleX(0);
   transform-origin: left;
   animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
-  animation-delay: 1.75s;
+  animation-delay: 1.25s;
+}
+
+hr {
+  border: 1px solid $navy-blue;
 }
 
 .agent-2 {
+  font-size: 25px;
+  font-family: $font-header, Arial, sans-serif;
   opacity: 0;
-  animation-delay: 2s;
+  padding: 0 .5rem;
   animation: fade-in-right ease 0.4s forwards;
+  animation-delay: 1.5s;
+}
+
+.agent-2:hover {
+  color: $gold;
+  font-weight: bold;
 }
 
 
@@ -28,6 +41,6 @@
     transform: scaleX(0);
   }
   to {
-    transform: scaleX(1);
+    transform: scaleX(.5);
   }
 }
