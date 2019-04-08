@@ -5,10 +5,15 @@ $(document).ready(function(){
 
   setTimeout(function() {
     $('#initial-load').addClass('push-up');
-    $('.initial-header').addClass('reduce');
-    $('header, #initial-homepage').removeClass('hide');
+    // $('.initial-header').addClass('reduce');
+    $('#nav').removeClass('hide');
     $('#about').removeClass('hide');
-  }, 2000);
-     // }, 0);
+  // }, 2000);
+     }, 0);
+
+    setTimeout(function() {
+      $('#initial-load').addClass('hide');
+    // }, 2500);
+  }, 50);
 
 });

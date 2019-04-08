@@ -19,19 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-// body:before {
-//   background-color: $blush;
-//   content: "";
-//   display: flex;
-//   position: absolute;
-//   left: -345px;
-//   top: 0;
-//   bottom: 0;
-//   transform: skew(-30deg);
-//   width: 690px;
-//   // width: 1425px;
-// }
-
 header, .container, .container-fluid {
   flex: 1 0 auto;
 }

@@ -11,14 +11,21 @@ strong, .bold {
   font-weight: bold;
 }
 
-.initial-header {
+.initial-header, .initials {
   color: #D28C0E;
   font-family: $font-init-header, Helvetica, Arial, sans-serif;
-  font-size: 12rem;
   font-weight: 100;
   -webkit-animation: glow .9s infinite alternate;
   animation: glow .9s infinite alternate;
   z-index: 100;
+}
+
+.initial-header {
+  font-size: 12rem;
+}
+
+.initials {
+  font-size: 6rem;
 }
 
 .right-align {
@@ -29,17 +36,17 @@ strong, .bold {
   text-align: left;
 }
 
-#j {
-  &.reduce {
-    transform: scale(0.5) translate(50%, 585%);
-  }
-}
-
-#l {
-  &.reduce {
-    transform: scale(0.5) translate(-50%, 600%);
-  }
-}
+// #j {
+//   &.reduce {
+//     transform: scale(0.5) translate(50%, 585%);
+//   }
+// }
+//
+// #l {
+//   &.reduce {
+//     transform: scale(0.5) translate(-50%, 600%);
+//   }
+// }
 
 @keyframes glow {
   to {

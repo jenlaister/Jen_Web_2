@@ -4,37 +4,42 @@
 }
 
 @font-face {
-  font-family: 'Butler_Black';
-  src: url('../fonts/Butler_Black.otf');
+  font-family: 'Butler Black';
+  src: url('../fonts/Butler_Black.otf'), url('../fonts/Butler-Black.woff2') format('woff2'),
+  url('../fonts/Butler-Black.woff') format('woff');
 }
 
 
 @font-face {
-  font-family: 'Butler_Bold';
-  src: url('../fonts/Butler_Bold.otf');
+  font-family: 'Butler Bold';
+  src: url('..//fonts/Butler_Bold.otf'), url('../fonts/Butler-Bold.woff2') format('woff2'),
+  url('../fonts/Butler-Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Butler_ExtraBold';
-  src: url('../fonts/Butler_ExtraBold.otf');
+  font-family: 'Butler ExtraBold';
+  src: url('../fonts/Butler_ExtraBold.otf'), url('../fonts/Butler-ExtraBold.woff2') format('woff2'), url('../fonts/Butler-ExtraBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Butler_Light';
-  src: url('../fonts/Butler_Light.otf');
+  font-family: 'Butler Light';
+  src: url('../fonts/Butler_Light.otf'), url('../fonts/Butler-Light.woff2') format('woff2'),
+  url('../fonts/Butler-Light.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Butler_Medium';
-  src: url('../fonts/Butler_Medium.otf');
+  font-family: 'Butler Medium';
+  src: url('../fonts/Butler_Medium.otf'), url('../fonts/Butler-Medium.woff2') format('woff2'),
+  url('../fonts/Butler-Medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Butler_Regular';
-  src: url('../fonts/Butler_Regular.otf');
+  font-family: 'Butler Regular';
+  src: url('../fonts/Butler_Regular.otf'), url('../fonts/Butler.woff2') format('woff2'),
+  url('../fonts/Butler.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Butler_Ultra_Light';
-  src: url('../fonts/Butler_Ultra_Light.otf');
+  font-family: 'Butler UltraLight';
+  src: url('../fonts/Butler_Ultra_Light.otf'), url('../fonts/Butler-UltraLight.woff2') format('woff2'), url('../fonts/Butler-UltraLight.woff') format('woff');
 }

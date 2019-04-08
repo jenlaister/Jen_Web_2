@@ -28,9 +28,15 @@ section {
   align-items: center;
   justify-content: center;
   height: 100%;
-  &:hover {
-    font-weight: bold;
-  }
+  // &:hover {
+  //   font-weight: bold;
+  // }
+}
+
+.flex-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .col {
@@ -45,6 +51,16 @@ section {
 .col-2-3 {
   width: 66.6%;
   flex: 2 0;
+}
+
+.col-1-5 {
+  width: 20%;
+  flex: 1 0;
+}
+
+.col-4-5 {
+  width: 80%;
+  flex: 4 0;
 }
 
 .col-1-4 {

@@ -1,0 +1,55 @@
+section#personal-projects {
+  background-color: $white;
+  padding: 4rem 1.5rem;
+  position: relative;
+  margin-top: 8em;
+  #personal-header {
+    background-color: $navy-blue;
+    padding: 10rem 1rem;
+    text-align: center;
+  }
+  .project-blurb {
+    align-content: center;
+    padding: 1rem .75rem;
+  }
+  .project-blurb:hover {
+    margin-top: -1rem;
+    .project-link {
+      display: block;
+    }
+  }
+  .project-link {
+    color: $navy-blue;
+    display: none;
+    text-decoration: none;
+  }
+  .project-link:hover {
+    color: $gold;
+    font-weight: bold;
+  }
+}
+// section#projects:before {
+//   background: $dove-gry;
+//   content: '';
+//   display: block;
+//   height: 190px;
+//   width: 120%;
+//   position: absolute;
+//   left: 50%;
+//   bottom: 100%;
+//   -webkit-transform: rotate(-5deg) translateX(-50%);
+//   transform: rotate(-3deg) translateX(-50%);
+//   -webkit-transform-origin: center top;
+//   transform-origin: center top;
+//   z-index: 150;
+// }
+section#professional-projects {
+  .project-link {
+    color: $navy-blue;
+    text-decoration: none;
+  }
+  .project-link:hover {
+    color: $gold;
+    font-weight: bold;
+  }
+}

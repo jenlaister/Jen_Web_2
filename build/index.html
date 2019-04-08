@@ -45,32 +45,47 @@
 
 <section id="initial-load">
   <div class="content-row center">
-    <h1 id="j" class="initial-header mt-300">J</h1>
-    <h1 id="l" class="initial-header">L</h1>
+      <h1 id="j" class="initial-header mt-300">J</h1>
+      <h1 id="l" class="initial-header">L</h1>
   </div>
 </section>
 
-  <header class="hide">
-      <hr class="agent-1"/>
-      <ul id="nav-list">
-        <li>
-          <a href="#about" class="agent-2">About</a>
-        </li>
-        <li>
-          <a href="#projects" class="agent-2">Projects</a>
-        </li>
-        <li>
-          <a href="#contact" class="agent-2">Contact</a>
-        </li>
-        <!-- <li><a href="/">Home</a></li>
-        <li><a href="/page">Page link</a></li> -->
-      </ul>
-  </header>
+  <section id="nav" class="hide">
+    <div class="content-row">
+  
+      <div class="col-1-2 center">
+          <h1 id="j" class="initials mt-150">J</h1>
+          <h1 id="l" class="initials">L</h1>
+      </div>
+  
+      <div class="col-1-2">
+        <div class="content-row">
+          <div class="col-1-2">
+            <hr class="agent-1"/>
+          </div>
+          <div class="col-1-2">
+            <ul id="nav-list">
+              <li>
+                <a href="#about" class="agent-2">About</a>
+              </li>
+              <li>
+                <a href="#projects" class="agent-2">Projects</a>
+              </li>
+              <li>
+                <a href="#contact" class="agent-2">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
 
     <section id="about" class="hide">
       <div class="content-row">
         <div class="col-1-3 mx-20">
-          <img src="../_assets/img/jen_profile.jpg" id="profile_pic" alt="Jenny's Profile Picture" title="Jenny's Profile Picture"/>
+          <img src="../_assets/img/jen_profile.jpg" id="profile_pic" alt="Jenny's Profile Picture" title="Jenny's Profile Picture" class="mx-auto center"/>
           <h2 class="right-align">Hey there, I'm a full stack developer based in New York. I like to build captivating digital interfaces and interactive productions with passion.</h2>
         </div>
         <div class="col-3-4 ml-75">
@@ -156,6 +171,9 @@
                             <li>
                               Wordpress
                             </li>
+                            <li>
+                              Sitecore
+                            </li>
                             <li><strong>Photoshop, Illustrator and Sketch</strong></li>
                           </ul>
                         </div>
@@ -171,9 +189,110 @@
       </div>
     </section>
 
-    <main role="main">
-      
-    </main>
+    <section id="personal-projects">
+      <div class="content-row mx-auto center">
+        <div id="personal-header" class="col">
+          <h1>PERSONAL<br />WORK</h1>
+        </div>
+        <div class="content-col">
+          <div class="content-row mx-auto center">
+            <div class="project-blurb col">
+              <img class="project" src="../_assets/img/projects/space_cadet.gif" alt="space cadet"/>
+              <a href="https://github.com/jenlaister/space_cadet" target="_blank"><h3>Space Cadet</h3></a>
+              <p>An animated game built with JavaScript and jQuery<br>Help Naut, the astronaut dog get from one side of the board to the other without colliding into any asteroids along the way or else it's GAME OVER! When Naut safely makes it across the board, congrats you WIN!</p>
+              <a class="project-link" href="http://jennylai.co/space_cadet/" target="_blank">&mdash;Play the Game!</a>
+            </div>
+            <div class="project-blurb col">
+              <img class="project" src="../_assets/img/projects/curate.it.gif" alt="curate it"/>
+              <a href="https://github.com/jenlaister/curate-it-react" target="_blank"><h3>curate.it</h3></a>
+              <p>A personalized art gallery built with a RESTful API/Ruby on Rails back end and a JavaScript/React, Redux front end.<br>Create your own art gallery with your collection of curated art pieces pulled from Harvard’s Art Museums API.</p>
+              <a class="project-link" href="http://it-do-curate.herokuapp.com/" target="_blank">&mdash;Create your own gallery!</a>
+            </div>
+          </div>
+          <div class="content-row mx-auto center">
+            <div class="project-blurb col">
+              <img class="project" src="../_assets/img/projects/two_cents.gif" alt="two cents"/>
+              <a href="https://github.com/jenlaister/Two-Cents-Gem" target="_blank"><h3>Two Cents</h3></a>
+              <p>Command line gem built with ruby.<br>A published ruby gem that gives you a random cat ascii artwork, quotes and allows you to query Google from your terminal.</p>
+              <a class="project-link" href="https://rubygems.org/gems/two_cents" target="_blank">&mdash;Get the gem!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="professional-projects">
+      <h3>Websites</h3>
+      <div class="content-row">
+        <div class="">
+          <p>
+            Lead on Phase II & Relaunch / Development
+          </p>
+          <a href="https://www.vemlidyhcp.com/" target="_blank" class="project-link"> Vemlidy HCP (Healthcare Professionals)</a>
+          </p>
+        </div>
+        <div class="">
+          <p>
+            Lead on Phase II & Relaunch / Development
+          </p>
+          <a href="https://hepbmd.com/" target="_blank" class="project-link">HepB MD</a>
+        </div>
+        <div class="">
+          <p>
+            Initial Build & Launch / Development
+          </p>
+          <a href="https://www.ntmfacts.com/" target="_blank" class="project-link">NTM Facts</a>
+        </div>
+        <div class="">
+          <p>
+            Implemented Analytics Tagging & Updates / Development
+          </p>
+          <a href="https://www.trulance.com/" target="_blank" class="project-link">Trualnce</a>
+        </div>
+        <div class="">
+          <p>
+            Updates + Sitecore / Development
+          </p>
+          <a href="https://www.vemlidy.com/" target="_blank" class="project-link">Vemlidy</a>
+        </div>
+      </div>
+      <h3>Banners</h3>
+      <div class="content-row">
+        <div class="">
+          <img class="p-project" src="../_assets/img/projects/xospata_1.gif" alt="xospata banner"/>
+        </div>
+        <div class="">
+          <img class="p-project" src="../_assets/img/projects/xospata_2.gif" alt="xospata banner"/>
+        </div>
+        <div class="">
+          <img class="p-project" src="../_assets/img/projects/arikayce.gif" alt="arikayce banner"/>
+        </div>
+        <!-- <div class="">
+          <img class="p-project" src="../_assets/img/projects/trulance_1.gif" alt="trulance banner"/>
+        </div> -->
+        <div class="">
+          <img class="p-project" src="../_assets/img/projects/trulance_2.gif" alt="trulance banner"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 id="email" class="mx-auto center"><a href="mailto:hijennylai@gmail.com">hijennylai@gmail.com</a></h2>
+      <div class="content-row mx-auto center">
+        <div class="">
+          <a href="https://github.com/jenlaister" target="_blank" class="icon"><img src="../_assets/img/icons/github.svg" /></a>
+        </div>
+        <div class="">
+          <a href="https://www.linkedin.com/in/jenny-lai-a4372156/" target="_blank" class="icon"><img src="../_assets/img/icons/linkedin.svg" /></a>
+        </div>
+        <div class="">
+          <a href="https://codepen.io/jenlaister" target="_blank" class="icon"><img src="../_assets/img/icons/code-pen.svg" /></a>
+        </div
+        <div class="">
+          <a href="https://medium.com/@jennylaister" target="_blank" class="icon"><img src="../_assets/img/icons/medium.svg" /></a>
+        </div>
+      </div>
+    </section>
 
   <footer>
   </footer>
