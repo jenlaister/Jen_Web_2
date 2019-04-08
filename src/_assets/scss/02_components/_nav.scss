@@ -1,6 +1,5 @@
 .agent-1 {
-  // margin: -4.5rem 0 0 45rem;
-  margin: 3.5rem 0 0 0rem;
+  margin: 3.5rem 0 0 3.25rem;
   transform: scaleX(0);
   transform-origin: left;
   animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
@@ -12,7 +11,7 @@ hr {
 }
 
 .agent-2 {
-  font-size: 25px;
+  font-size: 18px;
   font-family: $font-header-bold, Arial, sans-serif;
   color: $navy-blue;
   opacity: 0;

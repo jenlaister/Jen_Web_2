@@ -8,12 +8,12 @@ $(document).ready(function(){
     // $('.initial-header').addClass('reduce');
     $('#nav').removeClass('hide');
     $('#about').removeClass('hide');
-  // }, 2000);
-     }, 0);
+  }, 2000);
+     // }, 0);
 
     setTimeout(function() {
       $('#initial-load').addClass('hide');
-    // }, 2500);
-  }, 50);
+    }, 2500);
+  // }, 50);
 
 });

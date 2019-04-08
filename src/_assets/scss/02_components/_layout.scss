@@ -1,15 +1,3 @@
-section {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // height: 100%;
-  // z-index: -1;
-  // -webkit-transform: translateY(0);
-  // -ms-transform: translateY(0);
-  // transform: translateY(0);
-}
-
 //FLEXBOX
 .content-col {
   display: flex;
@@ -27,10 +15,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  // &:hover {
-  //   font-weight: bold;
-  // }
 }
 
 .flex-end {

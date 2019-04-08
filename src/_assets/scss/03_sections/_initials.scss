@@ -6,4 +6,12 @@
     transition: 1s ease-out;
     transform: translateY(-1250px);
   }
+  .content-row {
+    height: 100%;
+  }
+}
+
+#initials {
+  margin-top: -3rem;
+  justify-content: flex-end;
 }
