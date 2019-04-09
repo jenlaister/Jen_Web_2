@@ -3,9 +3,25 @@ section#personal-projects {
   padding: 4rem 1.5rem;
   position: relative;
   margin-top: 8em;
+  #project-img-container {
+    // position: absolute;
+    &.active {
+      display: block;
+    }
+    &.inactive {
+      display: none;
+    }
+  }
+  #projects {
+    position: absolute;
+  }
+  .projects-container {
+    max-height: 460px;
+    overflow-x: scroll;
+  }
   #personal-header {
     background-color: $navy-blue;
-    padding: 10rem 1rem;
+    padding: .05rem;
     text-align: center;
   }
   .project-blurb {
